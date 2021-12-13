@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Ingenieria</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <form id="formulario">
+        <div class="mb-2">
+          <label>Nombre</label>
+          <input type="text" id="nombre" validated>
+        </div>
+        <div class="mb-2">
+          <label>Apellido</label>
+          <input type="text" id="apellido">
+        </div>
+        <div class="mb-2">
+            <label>Identidad</label>
+            <input type="text" id="identidad">
+        </div>
+        <div class="mb-2">
+            <label>Fecha Nacimiento</label>
+            <input type="date" id="fecha">
+        </div>
+        <div class="mb-2">
+            <label>Correo electrónico</label>
+            <input type="email"id="correo">
+        </div>
+        <div class="mb-2">
+            <label>Foto de perfil</label>
+            <select id="foto">
+                <option value="img/foto1.jpg">Imagen 1</option>
+                <option value="img/foto2.jpg">Imagen 2</option>
+                <option value="img/foto3.jpg">Imagen 3</option>
+            </select>
+        </div>
+        <button type="button" class="btn btn-primary" id="boton">Guardar</button>
+    </form>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Identidad</th>
+            <th scope="col">Fecha Nacimiento</th>
+            <th scope="col">Correo electrónico</th>
+            <th scope="col">Foto de perfil</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-contenido">
+          
+        </tbody>
+      </table>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script> 
+    <script src="js/controlador.js"></script>
+</body>
+</html>
